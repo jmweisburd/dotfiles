@@ -1,0 +1,14 @@
+autoload -Uz vcs_info
+autoload -U colors && colors
+
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+
+zstyle ':vcs_info:*' enable git cvs svn
+zstyle ':vcs_info:*' actionformats '%F{5}(%F{2}%b%F{3}|%F{1}%a%F{5})%f '
+zstyle ':vcs_info:*' formats '%F{5}(%F{2}%b%F{5})%f '
+zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
+
+setopt prompt_subst
+
+PS1='%F{5}[%F{2}%n%F{5}] %F{3}%3~ ${vcs_info_msg_0_}%f%# '
