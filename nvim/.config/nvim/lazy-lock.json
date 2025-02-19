@@ -1,6 +1,6 @@
 {
-  "fzf": { "branch": "master", "commit": "378137d34a2a11b16c66dff2bf4309c7ce232a94" },
+  "fzf": { "branch": "master", "commit": "6fa8295ac5cd271f25f431611c25944bed416120" },
   "fzf.vim": { "branch": "master", "commit": "6cda389bdea953c9c66a3cfe57e40463ffd61ae9" },
   "gruvbox.nvim": { "branch": "main", "commit": "089b60e92aa0a1c6fa76ff527837cd35b6f5ac81" },
-  "lazy.nvim": { "branch": "main", "commit": "f15a93907ddad3d9139aea465ae18336d87f5ce6" }
+  "lazy.nvim": { "branch": "main", "commit": "e5e9bf48211a13d9ee6c1077c88327c49c1ab4a0" }
 }
