@@ -8,7 +8,9 @@ return {
     local fzf = require("fzf-lua")
     return {
       {"<leader>ff", fzf.files},
-      {"<leader>fg", fzf.grep},
+      {"<leader>fg", fzf.live_grep},
+      {"<leader>fb", fzf.buffers},
+      {"<leader>fs", fzf.lgrep_curbuf},
     }
   end,
   opts = {}
