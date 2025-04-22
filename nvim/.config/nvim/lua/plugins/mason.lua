@@ -5,12 +5,12 @@ return {
       require("mason").setup()
     end
   },
-  {
-    "williamboman/mason-lspconfig.nvim",
-    config = function()
-      require("mason-lspconfig").setup({
-        ensure_installed = { "ts_ls" }
-      })
-    end
-  },
+  -- {
+  --   "williamboman/mason-lspconfig.nvim",
+  --   config = function()
+  --     require("mason-lspconfig").setup({
+  --       ensure_installed = { "ts_ls" }
+  --     })
+  --   end
+  -- },
 }

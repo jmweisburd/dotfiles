@@ -1,4 +1,8 @@
-local config = require("lspconfig.configs.ts_ls")
+print("IN TS LUA")
+vim.lsp.config.typescript = {
+  cmd = { "typescript-language-server", "--stdio" },
+  filetypes = { "javascript", "typescript", "typescriptreact", "javascriptreact" },
+  root_markers = { 'tsconfig.json', 'package.json', 'jsconfig.json', '.git' },
+}
 
-vim.lsp.config["ts_ls"] = config
-vim.lsp.enable("ts_ls")
+vim.lsp.enable("typescript")
