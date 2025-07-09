@@ -19,3 +19,4 @@ vim.cmd.colorscheme("gruvbox")
 
 require("config.lsp")
 require("config.lsps.ts")
+require("config.lsps.python")
