@@ -12,3 +12,5 @@ vim.opt.smarttab = true
 
 vim.opt.number = true
 vim.opt.colorcolumn = "80"
+
+vim.opt.clipboard = "unnamedplus"

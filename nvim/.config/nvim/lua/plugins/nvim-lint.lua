@@ -5,24 +5,20 @@ return {
     local lint = require("lint")
 
     lint.linters_by_ft = {
-      javascript = { "biomejs" },
-      typescript = { "biomejs" },
-      javascriptreact = { "biomejs" },
-      typescriptreact = { "biomejs" },
     }
 
-    local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
-    vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost" }, {
-      group = lint_augroup,
-      callback = function()
-        lint.try_lint()
-      end,
-    })
+    -- local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
+    -- vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost" }, {
+    --   group = lint_augroup,
+    --   callback = function()
+    --     lint.try_lint()
+    --   end,
+    -- })
   end,
   keys = function()
     local lint = require("lint")
     return {
-      {"<leader>lt",  lint.try_lint()}
+      {"<leader>lt",  lint.try_lint}
     }
   end,
 }
