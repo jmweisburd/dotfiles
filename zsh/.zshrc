@@ -3,10 +3,12 @@ autoload -U colors && colors
 autoload -U compinit && compinit
 
 # history setup
+setopt EXTENDED_HISTORY
 setopt SHARE_HISTORY
 HISTFILE=$HOME/.zhistory
 SAVEHIST=1000
 HISTSIZE=999
+HIST_STAMPS="yyyy-mm-dd hh:mm"
 setopt HIST_EXPIRE_DUPS_FIRST
 
 setopt NO_BEEP
