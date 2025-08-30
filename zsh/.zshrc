@@ -8,7 +8,7 @@ setopt SHARE_HISTORY
 HISTFILE=$HOME/.zhistory
 SAVEHIST=1000
 HISTSIZE=999
-HIST_STAMPS="yyyy-mm-dd hh:mm"
+HIST_STAMPS="yyyy-mm-dd hh:mm:ss"
 setopt HIST_EXPIRE_DUPS_FIRST
 
 setopt NO_BEEP
@@ -17,9 +17,10 @@ setopt NO_BEEP
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 
-# alias
+# aliases
 alias ls='ls -G'
 alias lsa='ls -laG'
+alias gb='git branch'
 
 source $HOME/.config/zsh/prompt.zsh
 
